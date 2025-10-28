@@ -8,7 +8,7 @@ A landing page built with **Next.js**, **TypeScript**, and **Tailwind CSS**, as 
 
 ![Screenshot](https://i.imgur.com/himIJuF.jpeg)
 
-[Preview](https://peaceful-moonbeam-ff0524.netlify.app/)
+[Preview](https://metzgerhomes-lp-251021.netlify.app/)
 
 ---
 
