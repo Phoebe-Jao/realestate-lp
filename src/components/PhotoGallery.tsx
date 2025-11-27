@@ -84,17 +84,17 @@ export default function PhotoGallery() {
             </AnimatePresence>
           </div>
           <div className="absolute bottom-[-4rem] left-[14.5%] max-sm:hidden flex gap-2 z-10 bg-foreground/60 p-2 rounded">
-            {images.map((img, index) => (
+            {images.map((img, i) => (
               <div
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-14 h-10 relative cursor-pointer transition-border duration-500 border ${index === current ? 'border-background rounded' : 'border-transparent'}`}
+                key={i}
+                onClick={() => goToSlide(i)}
+                className={`w-14 h-10 relative cursor-pointer transition-border duration-500 border ${i === current ? 'border-background rounded' : 'border-transparent'}`}
               >
                 <Image
                   src={`/assets/images/${img}`}
-                  alt={`Thumbnail ${index + 1}`}
+                  alt={`Thumbnail ${i + 1}`}
                   fill
-                  className={`object-cover rounded transition-opacity duration-500 ${index !== current ? 'opacity-50' : ''}`}
+                  className={`object-cover rounded transition-opacity duration-500 ${i !== current ? 'opacity-50' : ''}`}
                 />
               </div>
             ))}

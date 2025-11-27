@@ -23,7 +23,7 @@ export default function NavMenu({ isOpen, closeMenu }: NavMenuProps) {
         <ul className="font-sans text-[1.4rem] font-medium">
           {
             navData.map((item, i) => (
-              <li className="py-1">
+              <li className="py-1" key={i}>
                 <a href={item.link} className="hover:opacity-50 transition-opacity duration-500">{item.title}</a>
               </li>
           ))}
